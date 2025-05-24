@@ -3,6 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { motion } from "motion/react"
+import logo from "./resources/icons/newLogo.png"
+import giticon from "./resources/icons/whiteGithub.png"
+import mailicon from "./resources/icons/whiteMail.png"
+import linkedinicon from "./resources/icons/whiteLinkedin.png"
+import connecticon from "./resources/icons/whiteConnect.png"
+import background from "./resources/images/black_background.png"
+import first from "./resources/images/first project.png"
+import second from "./resources/images/secondProject.png"
+
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,7 +22,7 @@ function App() {
       <header className="bg-black py-2 ">
         <div className="flex justify-between py-3 px-4 border-b  border-white ">
           <div className="w-[60px] ">
-            <img src="./src/resources/icons/newLogo.png" alt="" />
+            <img src={logo} alt="" />
           </div>
 
           <div className="flex px-3">
@@ -30,7 +40,7 @@ function App() {
             <div className="w-[60px] ml-10 sm:ml-16">
               <a href="#footer" className="flex text-white font-semibold items-center ">
                 <img
-                  src="./src/resources/icons/whiteConnect.png "
+                  src={connecticon}
                   alt=""
                   className="w-[16px] h-[16px] "
                 />
@@ -41,18 +51,17 @@ function App() {
         </div>
       </header>
       {/* body */}
-      <div
-        style={{
-          backgroundImage: `url(./src/resources/images/black_background.png)`,
-          backgroundSize: "contain",
-          backgroundRepeat: "repeat",
-          backgroundPosition: "center",
-          
-          width: "100%",
-        }}
-        className="flex flex-col items-center"
-      >
-        {/* info */}
+        <div
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "100%",
+          }}
+          className="flex flex-col items-center"
+        >
+          {/* info */}
         <div className="flex flex-col items-center  ">
           <div className="text-white py-10">
             {/* name */}
@@ -166,13 +175,13 @@ function App() {
               use html , css and javascript.
             </p>
             <img
-              src="./src/resources/images/first project.png"
+              src={first}
               alt=""
               className="w-[60%] object-cover border-2 rounded-lg border-gray-600 justify-center mx-auto"
             />
             <a href="https://github.com/ritik125V/PROJECT-A" className="flex items-center mb-2">
               <img
-                src="./src/resources/icons/whiteGithub.png"
+                src={giticon}
                 alt=""
                 className="mr-1 w-[22px] h-[25px] "
               />
@@ -190,13 +199,13 @@ function App() {
               This is my portfolio website which i created new tech like reactjs , tailwind css and more.
             </p>
             <img
-              src="./src/resources/images/secondProject.png"
+              src={second}
               alt=""
               className="w-[60%]  object-cover border-2 rounded-lg border-gray-600 justify-center mx-auto"
             />
             <a href="https://github.com/ritik125V/Potfolio" className="flex items-center mb-2">
               <img
-                src="./src/resources/icons/whiteGithub.png"
+                src={giticon}
                 alt=""
                 className="mr-1 w-[22px] h-[25px] "
               />
@@ -217,7 +226,7 @@ function App() {
               className="flex hover:bg-red-500 duration-150 rounded-md p-1 items-center"
             >
               <img
-                src="./src/resources/icons/whiteLinkedin.png"
+                src={linkedinicon}
                 alt=""
                 className="mr-1 w-[22px] h-[25px]"
               />
@@ -228,7 +237,7 @@ function App() {
               className="flex hover:bg-red-500 duration-150 rounded-md p-1"
             >
               <img
-                src="./src/resources/icons/whiteGithub.png"
+                src={giticon}
                 alt=""
                 className="w-[20px] h-[22px]"
               />
@@ -239,7 +248,7 @@ function App() {
               className="flex hover:bg-red-500 duration-150 rounded-md p-1 items-center "
             >
               <img
-                src="./src/resources/icons/whiteMail.png"
+                src={mailicon}
                 alt=""
                 className="w-[20px] h-[18px] pr-1"
               />
